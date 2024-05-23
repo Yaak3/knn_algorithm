@@ -5,7 +5,7 @@
 '''
 
 from knn import knn
-from tools import acuracy
+from tools import accuracy
 import pandas as pd
 import scipy.io as scipy
 

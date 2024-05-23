@@ -11,9 +11,8 @@ def euclidian_distance(X_train, X_test):
 
 def accuracy(predicted_values, y_test):
    correct_predictions = predicted_values == y_test
-
    sum_correct_predicionts = sum(correct_predictions)
-   
+
    return sum_correct_predicionts / len(y_test)
 
 #TODO desenvolver normalização e padronização dos dados nos metodos abaixo

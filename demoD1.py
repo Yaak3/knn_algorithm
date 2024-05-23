@@ -5,7 +5,7 @@
 '''
 
 from knn import knn
-from tools import acuracy
+from tools import accuracy
 import pandas as pd
 import scipy.io as scipy
 
@@ -18,4 +18,4 @@ y_test = mat['testRots']
 
 predicted_classes = knn(X_train, y_train, X_test, 10)
 
-#print(acuracy(predicted_classes, y_test))
+print(accuracy(predicted_classes, y_test))
