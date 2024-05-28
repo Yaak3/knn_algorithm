@@ -5,8 +5,7 @@
 '''
 
 from knn import knn
-from tools import accuracy
-import pandas as pd
+from tools import acuracy, normalization, padronization
 import scipy.io as scipy
 
 mat = scipy.loadmat('datasets\\grupoDados1.mat')
@@ -18,4 +17,4 @@ y_test = mat['testRots']
 
 predicted_classes = knn(X_train, y_train, X_test, 10)
 
-print(accuracy(predicted_classes, y_test))
+print(acuracy(predicted_classes, y_test))
