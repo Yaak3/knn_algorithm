@@ -54,8 +54,10 @@ def apply_transformation(df, type):
             feature_transformed.append(
                (value - statistics.mean(feature)) / statistics.stdev(feature)
                )
-
+      
          df_transformed = set_feature_df(feature_transformed, df_transformed)
+
+      feature_transformed.clear()
 
    return df_transformed
 
@@ -75,13 +77,13 @@ def set_feature_df(feature_transformed, df_transformed):
 
    return df_temp
 
-def remove_features_df(data_frame, num_features):
+def get_multiple_features_df(data_frame, num_features):
    new_df = []
    temp_row = []
 
    for row in data_frame:
       for index, value in enumerate(row):
-         if(index not in num_features):
+         if(index in num_features):
             temp_row.append(value)
 
       new_df.append(temp_row.copy())
