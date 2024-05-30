@@ -1,3 +1,9 @@
+'''
+    Bruno Gabriel de Sousa, Alexandre Zeni,
+    Lorhan Felipe Melo, Leonardo Oliani Fernandes,
+    Joshua Patrick Loesch Alves
+'''
+
 from tools import euclidian_distance
 from statistics import mode
 import numpy as np

@@ -1,3 +1,9 @@
+'''
+    Bruno Gabriel de Sousa, Alexandre Zeni,
+    Lorhan Felipe Melo, Leonardo Oliani Fernandes,
+    Joshua Patrick Loesch Alves
+'''
+
 import math
 import matplotlib.pyplot as plt
 import statistics
