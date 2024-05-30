@@ -18,7 +18,7 @@ def euclidian_distance(X_train, X_test):
 
     return math.sqrt(distance)
 
-def acuracy(predicted_values, y_test):
+def accuracy(predicted_values, y_test):
    correct_predictions = predicted_values == y_test
 
    sum_correct_predicionts = sum(correct_predictions)
