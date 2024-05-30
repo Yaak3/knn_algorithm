@@ -3,6 +3,7 @@ from statistics import mode
 import numpy as np
 
 def knn(X_train, y_train, X_test, k):
+
   distances = {}
   predicted_class = []
 
